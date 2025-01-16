@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="swiper.css">
+    <title>Valentino Imanuel - Personal Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo">
+            <a href="#hero"data-aos="fade-up">V<span>A</span></a>
+          </div>
+     
+          <!-- Navigation Menu -->
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#services"data-aos="fade-up">Services</a></li>
+              <li><a href="#portfolios"data-aos="fade-up">Portfolio</a></li>
+              <li><a href="#skills"data-aos="fade-up">Skills</a></li>
+              <li><a href="#contact"data-aos="fade-up">Contact</a></li>
+            </ul>
+          </nav>
+    
+          <!-- Hamburger Menu Icon -->
+          <div class="burger" id="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+    
+        <section id="hero">
+          <div class="hero-left">
+            <h3 class="pre-title"data-aos="fade-down">Hello, I'm</h3>
+            <h1 class="hero-name"data-aos="zoom-in-right">Valentino <span>Imanuel</span></h1>
+            <h2 data-aos="fade-up"
+            data-aos-duration="3000">
+              As a <span>Mobile</span>/<span>Web Developer</span>. Nice to meet you, I would like to welcome you with my personal portfolio.
+            </h2>
+          </div>
+    
+          <div class="hero-right">
+            <img src="./images/iga.png" data-aos="zoom-out-up" />
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- End Header -->
+    <script>
+      // JavaScript untuk mengubah status aktif saat burger diklik
+const burger = document.getElementById('burger');
+const nav = document.querySelector('.nav');
+
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+  
+    </script>
+     
+      <!-- Services -->
+    <section id="services">
+      <div class="services main-container">
+        <h3 class="pre-title"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">Services</h3>
+        <h1 class="section-title services-title"data-aos="fade-down-left">Comprehensive Development Expertise: Your Partner for Mobile, Web, and Backend Solutions</h1>
+        
+        <div class="grid-3">
+          <div class="service">
+            <div class="service-icon">
+             <img data-aos="flip-left"data-aos-duration="1000"src="./images/g1.svg" alt="">
+        </div>
+        <div class="ui">
+          <h4 data-aos="fade-right">UI/UX Design</h4>
+            <p style="color: black;"data-aos="fade-down">
+              Turn what you have in mind of a digital product into reality. For
+              any platform you consider.
+            </p>
+        </div>
+            
+          </div>
+
+          <div class="service">
+            <div class="service-icon">
+              <img data-aos="flip-left"data-aos-duration="1000"src="./images/g2.svg" alt="">
+            </div>
+            <div class="app">
+              <h4 data-aos="fade-right">Application Development</h4>
+            <p style="color: black;"data-aos="fade-down">
+              Standard designing, building, and implementing your applications
+              with documentation.
+            </p>
+            </div>
+            
+          </div>
+
+          <div class="service">
+            <div class="service-icon">
+              <img data-aos="flip-left"data-aos-duration="1000"src="./images/g3.svg" alt="">
+            </div>
+            <div class="web">
+              <h4 data-aos="fade-right">Web Development</h4>
+            <p style="color: black;"data-aos="fade-down">
+              Create and maintain your websites and also take care of its
+              performance and traffic capacity.
+            </p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+     <!-- Portfolios -->
+    <section id="portfolios">
+      <div class="portfolios main-container">
+        <h3 class="pre-title"data-aos="fade-up"
+        data-aos-anchor-placement="bottom-center">My Projects</h3>
+        <h1 style="color: #f7f7f7;;" class="section-title"data-aos="fade-up-right">Featured Portfolios</h1>
+
+        <div class="swiper mySwiper"data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/P1.jpg" alt="P1"></div>
+            <div class="swiper-slide"><img src="./images/PP2.jpg" alt="PP2"></div>
+            <div class="swiper-slide"><img src="./images/P3.jpg" alt="P4"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div data-aos="zoom-in-down"data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" class="grid-3">
+          <!-- Portfolio 1 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+              <img
+                src="./images/P1.jpg"
+                alt="Portfolio 1"
+              />
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Music Video</h4>
+                <a href="https://youtu.be/mLNsApOVK_I?si=Rrn_S-xhU-SZGbBM"target="_blank" class="portfolio-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              
+              <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                This is a video containing my school project, this video is to win the East Java Band Competition, I am here as a keyboardist.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio 2 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+              <img
+                src="./images/PP2.jpg"
+                alt="Portfolio 2"
+              />
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Videography</h4>
+                <a href="https://youtu.be/2I34788aJrM?si=hVsL9LPyfg_3Mrjh"target="_blank" class="portfolio-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              
+              <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                This is my school music project video, to participate in the music video 
+                competition at RRI Surabaya, I am here as a cameraman and video editor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Portfolio 3 -->
+          <div class="portfolio">
+            <div class="portfolio-cover">
+              <img
+                src="./images/P3.jpg"
+                alt="Portfolio 3"
+              />
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-title">
+                <h4>Videography</h4>
+                <a href="https://youtu.be/2SDU31ZtP9U?si=nfCyUB69MAxeK39h"target="_blank" class="portfolio-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                The purpose of making this video is to get a scholarship and give appreciation to the UNION
+                 organization that has provided scholarships at the high school level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolios -->
+
+    <!-- Skills & Education -->
+    <section id="skills">
+      <div class="skills main-container">
+        <h3 class="pre-title"data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0">Learning Path</h3>
+        <h1 class="section-title"data-aos="fade-up-left">Skills & Education</h1>
+
+        <div class="skills-grid">
+          <div class="skills-left">
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info"data-aos="zoom-in-up"data-aos-duration="1500">
+                <h4 class="education-title">Institut Sains dan Teknologi Terpadu Surabaya (ISTTS)</h4>
+                <p>S1 INFORMATIKA</p>
+                <h4 class="education-years">2024 - 2028</h4>
+              </div>
+            </div>
+            <div class="education"data-aos="zoom-in-up"data-aos-duration="1500">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">SMA YPPI 2 Surabaya</h4>
+                <p> Senior High School</p>
+                <h4 class="education-years">2021 - 2024</h4>
+              </div>
+            </div>
+            <div class="education"data-aos="zoom-in-up"data-aos-duration="1500">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info"data-aos="zoom-in-up"data-aos-duration="1500">
+                <h4 class="education-title">SMP YPPI 1 Surabaya</h4>
+                <p>Junior High School</p>
+                <h4 class="education-years">2018 - 2021</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-right">
+            <img data-aos="zoom-in-down"src="./images/tgn.webp" alt="">
+            <p data-aos="zoom-in-down">
+                <b>As a developer, I'm passionate about <span>crafting dynamic solutions </span>spanning<span> mobile apps, web design, and backend systems.</span> 
+                  Let's collaborate to transform your ideas into exceptional digital realities that elevate your digital presence and drive success in the tech landscape.</b>
+            </p>
+
+            <div class="skills-list">
+              <ul data-aos="flip-right"data-aos-duration="1000">
+                <li>HTML</li>
+                <li>Java Script</li>
+                <li>CSS</li>
+                <li>Editing Video</li>
+                <li>Music Composer</li>
+                <li>Photography</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills & Education  -->
+
+    <!-- kolom e komen dll -->
+  <div data-aos="flip-left"class="comment">
+    <div class="portfolios main-container">
+      <h3 class="pre-title">About Me</h3>
+      <h1 style="color: #f7f7f7;;" class="section-title">My Contact</h1>
+
+    </div>
+  </div>
+    <section id="contact">
+      <div class="contact main-container">
+        <!-- Bagian Form -->
+        <div data-aos="fade-down-left"data-aos-duration="1500"class="contact-left">
+          <form
+            action="#"
+            method="POST"
+            class="contact-form"
+          >
+            <div>
+              <input type="text" placeholder="Name" name="name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn-submit">Send Message</button>
+            </div>
+          </form>
+          <div id="form-result" style="margin-top: 20px;"></div>
+        </div>
+        <!-- Bagian Contact Address & Phone -->
+         
+        <div class="contact-right">
+          <div class="contact-item">
+            <div data-aos="fade-right"class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 14h-24l4-8h3.135c.385.641.798 1.309 1.232 2h-3.131l-2 4h17.527l-2-4h-3.131c.435-.691.848-1.359 1.232-2h3.136l4 8z"
+                />
+              </svg>
+            </div>
+            <div class="contact-item-detail">
+              <h4>Address</h4>
+              <p data-aos="fade-right">Jl. Ngagel Jaya Tengah No.73-77, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5557718769014!2d112.7560201750471!3d-7.291275192716152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb476048727%3A0x5f5f7cf736ae643e!2sInstitut%20Sains%20dan%20Teknologi%20Terpadu%20Surabaya%20(ISTTS)!5e0!3m2!1sid!2sid!4v1731225679631!5m2!1sid!2sid" 
+              width="100%" height="110" style="border:5px solid orange;border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"data-aos="fade-right"></iframe> 
+            </div>
+          </div>
+
+          <div data-aos="fade-left"class="contact-item">
+            <div class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                />
+              </svg>
+            </div>
+            <div data-aos="fade-left"class="contact-item-detail">
+              <h4 data-aos="fade-left">Phone</h4>
+              <p data-aos="fade-left">+6289669440576</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div data-aos="fade-right"class="contact-item-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+                />
+              </svg>
+            </div>
+            <div data-aos="fade-right"class="contact-item-detail">
+              <h4 data-aos="fade-right">Email</h4>
+              <p data-aos="fade-right">valentinoanggono09@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <script>
+      document.querySelector('.contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); 
+        
+        
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+    
+       
+        const formResult = document.querySelector('#form-result');
+        formResult.innerHTML = `
+          <div class="form-data-display">
+            <h3>Form Data</h3>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Message:</strong> ${message}</p>
+          </div>
+        `;
+    
+        
+        document.querySelector('.contact-form').reset();
+      });
+    </script>
+  </section>
+   
+
+    <!-- Footer -->
+    <footer >
+      <div class="footer-icons"data-aos="zoom-in"data-aos-duration="1500">
+        <a href="https://www.instagram.com/val_.igaa/"target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://wa.me/+6289669440576"target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 32 32"
+          >
+            <path d="M23.328 19.177c-0.401-0.203-2.354-1.156-2.719-1.292-0.365-0.13-0.63-0.198-0.896 0.203-0.26 0.391-1.026 1.286-1.26 1.547s-0.464 0.281-0.859 0.104c-0.401-0.203-1.682-0.62-3.203-1.984-1.188-1.057-1.979-2.359-2.214-2.76-0.234-0.396-0.026-0.62 0.172-0.818 0.182-0.182 0.401-0.458 0.604-0.698 0.193-0.24 0.255-0.401 0.396-0.661 0.13-0.281 0.063-0.5-0.036-0.698s-0.896-2.161-1.229-2.943c-0.318-0.776-0.651-0.677-0.896-0.677-0.229-0.021-0.495-0.021-0.76-0.021s-0.698 0.099-1.063 0.479c-0.365 0.401-1.396 1.359-1.396 3.297 0 1.943 1.427 3.823 1.625 4.104 0.203 0.26 2.807 4.26 6.802 5.979 0.953 0.401 1.693 0.641 2.271 0.839 0.953 0.302 1.823 0.26 2.51 0.161 0.76-0.125 2.354-0.964 2.688-1.901 0.339-0.943 0.339-1.724 0.24-1.901-0.099-0.182-0.359-0.281-0.76-0.458zM16.083 29h-0.021c-2.365 0-4.703-0.641-6.745-1.839l-0.479-0.286-5 1.302 1.344-4.865-0.323-0.5c-1.318-2.099-2.021-4.521-2.021-7.010 0-7.26 5.943-13.182 13.255-13.182 3.542 0 6.865 1.38 9.365 3.88 2.5 2.479 3.88 5.802 3.88 9.323-0.010 7.255-5.948 13.177-13.25 13.177zM27.359 4.599c-3.042-2.938-7.042-4.599-11.297-4.599-8.776 0-15.922 7.115-15.927 15.859 0 2.792 0.729 5.516 2.125 7.927l-2.26 8.214 8.448-2.203c2.328 1.255 4.948 1.927 7.615 1.932h0.005c8.781 0 15.927-7.115 15.932-15.865 0-4.234-1.651-8.219-4.661-11.214z"/>
+          </svg>
+        </a>
+
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://github.com/igaaa0926"target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+      
+  
+      <p style="font-family: Arial, Helvetica, sans-serif; color: #0740ad;">&#169; Valentino Imanuel Geraldy.All rights reserved 2024</p>
+      <br>
+      <div class="audio-container">
+        <p>Audio akan mencoba autoplay. Klik ikon di bawah untuk memutar atau menjeda:</p>
+        <button id="playPauseButton" class="play-button">
+            <img id="controlIcon" src="play-button-arrowhead.png" alt="Play Audio" class="control-icon">
+        </button>
+        <audio id="audioPlayer" src="KANA-BOON - Silhouette.mp3" type="audio/mp3"></audio>
+    </div>
+    </footer>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+      AOS.init();
+    </script>
+    
+     <script src="js.js"></script>
+     
+     <script>
+        const playPauseButton = document.getElementById('playPauseButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const controlIcon = document.getElementById('controlIcon');
+
+       
+        playPauseButton.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                controlIcon.src = "pause.png"; 
+            } else {
+                audioPlayer.pause();
+                controlIcon.src = "play-button-arrowhead.png"; 
+            }
+        });
+
+        
+        audioPlayer.addEventListener('ended', () => {
+            controlIcon.src = "play-button-arrowhead.png";
+        });
+    </script>
+    </body>
+</html>
